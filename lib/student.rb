@@ -55,7 +55,7 @@ class Student
     
     sql = "SELECT * FROM students WHERE name = ?"
     
-    DB[:conn].execute(sql, name).map {|row| self.new_from_db(row)}.first
+    DB[:conn].execute(sql, name).map {|column_row| self.new_from_db(column_row)}.first
   end 
     
 
