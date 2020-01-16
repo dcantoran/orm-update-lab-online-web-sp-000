@@ -9,5 +9,13 @@ class Student
     @grade = grade
     @id = id
   end 
+  
+  def self.create_table
+    sql = "CREATE TABLE students (
+      id INTEGER PRIMARY KEY
+      name TEXT 
+      grade TEXT
+      )"
+  end 
 
 end
