@@ -40,5 +40,9 @@ class Student
     new_student.save
     new_student
   end 
+  
+  def update
+    sql = "UPDATE students "
+  end 
 
 end
